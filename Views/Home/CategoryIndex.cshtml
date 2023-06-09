@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@model IEnumerable<Test.Models.Product>
+
+<h2>Category</h2>
+<br />
+
+<p>
+    @Html.ActionLink("Create New Category", "CreateCategory")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </th>
+    </tr>
+</table>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+

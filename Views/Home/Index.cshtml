@@ -1,0 +1,47 @@
+﻿
+
+
+
+<br />
+<br />
+
+<div class="jumbotron">
+    <h2> WELCOME  To </h2>
+
+    <h1> <span style="margin-left: 300px; align-content: center;">  Shopping site </span> </h1>
+
+</div>
+
+<br />
+<br />
+
+@model IEnumerable<Test.Models.Product>
+
+<h2>Products</h2> <br /> 
+
+<p>
+    @Html.ActionLink("Create New Product", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryId)
+        <th>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        <th>
+    </tr>    
+</table>
+
+<br /> <br /> <br /> <br /> <br />
+
